@@ -1,0 +1,21 @@
+.actions {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+@media (max-width: 640px) {
+  .fullTable {
+    display: none;
+  }
+
+  .mobileTable {
+    display: block;
+  }
+}
+
+@media (min-width: 640px) {
+  .mobileTable {
+    display: none;
+  }
+}
