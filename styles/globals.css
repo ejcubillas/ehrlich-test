@@ -16,11 +16,30 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
   body {
     color: black;
     background: white;
   }
+}
+
+
+div.container {
+  padding: 15px;
+  max-width: 60%;
+  margin: auto;
+}
+
+input {
+  padding: 8px 15px;
+  font-size: 16px;
+  margin: 2px;
+}
+
+button {
+  background-color: #222;
+  padding: 8px 15px;
+  font-size: 16px;
+  margin: 2px;
+  color: white;
+  cursor: pointer;
 }

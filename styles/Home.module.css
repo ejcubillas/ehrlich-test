@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.github {
+  margin-bottom: 50px;
+}
+
+.github p {
+  text-align: center;
+}
