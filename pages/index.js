@@ -18,7 +18,7 @@ export default function Home(props) {
   return (
     <div>
       <Head>
-        <title>Weater Forecast</title>
+        <title>Weather Forecast</title>
         <meta name="description" content="Weather Forecast" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
