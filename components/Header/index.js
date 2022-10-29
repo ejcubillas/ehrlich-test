@@ -10,6 +10,7 @@ const Header = () => {
           src="/cloud.png"
           width={60}
           height={60}
+          alt="Logo"
         />
         <h1>Weater Forecast</h1>
       </div>

@@ -25,7 +25,7 @@ a {
 
 div.container {
   padding: 15px;
-  max-width: 60%;
+  max-width: 70%;
   margin: auto;
 }
 
@@ -42,4 +42,34 @@ button {
   margin: 2px;
   color: white;
   cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+table th {
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 15px 15px;
+}
+
+table thead tr:first-child{
+  background-color: #ddd;
+}
+
+table thead tr {
+  background-color: #eee;
+}
+
+@media (max-width: 1024px) {
+  div.container {
+    max-width: 100%;
+  }
 }
