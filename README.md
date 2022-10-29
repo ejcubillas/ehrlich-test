@@ -1,22 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ehrlich Text - Weather Forecast using React JS (Next JS)
+This is a simple weather forecast web application created using ReactJS specifically NextJS with GitHub Authentication.
 
-## Getting Started
+### GET STARTED
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Next, create `.env` file in your project directory and supply the following:
+
+```bash
+WEATHER_API=https://api.openweathermap.org/data/2.5/weather
+WEATHER_API_KEY={API_KEY}
+GITHUB_ID={YOUR_GITHUB_CLIENT_ID}
+GITHUB_SECRET={YOUR_GITHUB_SECRET}
+```
+
+##### To get your GITHUB CLIENT ID & SECRET 
+Follow the steps provided by next-auth https://next-auth.js.org/providers/github
+
+##### To get your Openweathermap API KEY
+1. Create a FREE [Openweathermap](https://home.openweathermap.org/users/sign_up) account 
+2. Click your name in the menu/navbar and select My API Keys
+3. You can use the default key or you can create another key.
+
+
+##### RUN DEVELOPMENT SERVER
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
@@ -31,5 +49,3 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# ehrlich-test
