@@ -1,4 +1,4 @@
-# Ehrlich Text - Weather Forecast using React JS (Next JS)
+# Ehrlich Test - Weather Forecast using React JS (Next JS)
 This is a simple weather forecast web application created using ReactJS specifically NextJS with GitHub Authentication.
 
 ### GET STARTED
