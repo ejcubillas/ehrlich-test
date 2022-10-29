@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import React from 'react'
+import Logout from '../Logout';
 import HeaderStyles from './header.module.css';
+import { useSession } from 'next-auth/react';
 
 const Header = () => {
+  const { data:session } = useSession();
+
   return (
     <div className={HeaderStyles.container}>
       <div className={HeaderStyles.siteTitle}>
@@ -14,6 +18,15 @@ const Header = () => {
         />
         <h1>Weater Forecast</h1>
       </div>
+
+      {
+        session
+        ? <div>
+            <Logout/>
+          </div>
+        : null
+        
+      }
       
     </div>
   )

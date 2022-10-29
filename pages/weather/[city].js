@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { getSession } from 'next-auth/react';
 import { dateFormat } from '../../utils/date-format';
 import WeatherStyles from '../../styles/Weather.module.css';
 
@@ -78,7 +79,17 @@ export default Weather;
 
 
 export async function getServerSideProps(context) {
+  const session = await getSession(context);
   const { city } = context.params;
+  
+  if (!session) {
+    return {
+      redirect: {
+        destination: '/login',
+        permanent: false,
+      },
+    }
+  }
   
   const res = await fetch(`${process.env.WEATHER_API}?q=${city}&appid=${process.env.WEATHER_API_KEY}&units=imperial`);
   const data = await res.json();
