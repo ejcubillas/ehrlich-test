@@ -16,7 +16,7 @@ export default function Home() {
             <p>Ernest Jay Cubillas</p>
             <p>https://github.com/ejcubillas</p>
           </div>
-          <input placeholder="Search place..."/>
+          <input placeholder="City"/>
           <button>Search</button>
         </div>
         
