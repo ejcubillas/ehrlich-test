@@ -16,7 +16,7 @@ const Header = () => {
           height={60}
           alt="Logo"
         />
-        <h1>Weater Forecast</h1>
+        <h1>Weather Forecast</h1>
       </div>
 
       {
